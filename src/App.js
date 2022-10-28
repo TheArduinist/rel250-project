@@ -4,6 +4,8 @@ import Map from './pages/Map.js';
 import MapControl from './pages/MapControl.js';
 import Layout from './pages/Layout.js';
 import NotFound from './pages/NotFound.js';
+import Home from './pages/Home.js';
+import Timeline from './pages/Timeline.js';
 import * as React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -32,7 +34,9 @@ class App extends React.Component {
       <BrowserRouter basename="/rel250-project/build">
         <Routes>
           <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
             <Route path="map" element={<div style={{display: "flex", flexGrow: "1"}}><MapControl map={this.state.map} markers={this.state.markers} /><Map changeMap={this.setMap} changeMarkers={this.setMarkers} /></div>} />
+            <Route path="timeline" element={<Timeline />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

@@ -1,0 +1,12 @@
+.timeline {
+    background-color: #C1AC89;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline h1 {
+    color: #322612;
+}

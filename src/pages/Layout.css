@@ -23,4 +23,16 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     background-color: #8C6C50;
+    height: 40px;
+    min-height: 40px;
+    margin-top: auto;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }

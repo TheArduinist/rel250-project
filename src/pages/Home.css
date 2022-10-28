@@ -1,0 +1,30 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #C1AC89;
+    height: 100%;
+}
+
+.home p {
+    color: #4d3b1e;
+}
+
+.home h1, h2 { 
+    color: #322612;
+}
+
+.home a {
+    color: #4d3b1e;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.home a:hover {
+    background-color: #eeeeee;
+}

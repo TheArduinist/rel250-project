@@ -21,7 +21,7 @@ const Layout = () => {
       <Outlet />
       
       <div className="footer">
-        <Link to="" />
+        <a href="https://github.com/TheArduinist/rel250-project" target="_blank">GitHub Repo</a>
       </div>
     </>
   );
