@@ -1,0 +1,21 @@
+.map-control {
+    width: 33vw;
+    background-color: #C1AC89;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-control button {
+    cursor: pointer;
+    min-width: 4vw;
+    width: fit-content;
+    height: 30px;
+    margin: 5px;
+}
+
+.map-control div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
