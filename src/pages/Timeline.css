@@ -1,12 +1,50 @@
 .timeline {
     background-color: #C1AC89;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 15px;
+}
+
+.timeline h1, h2, h3 {
+    color: #322612;
+    white-space: nowrap;
 }
 
 .timeline h1 {
-    color: #322612;
+    margin-bottom: 0px;
+}
+
+.timeline-section {
+    display: flex;
+    align-items: center;
+}
+
+.timeline-section img {
+    height: 3em;
+    object-fit: contain;
+    margin-right: 2em;
+    margin-left: 1em;
+}
+
+.timeline-section h2, h3 {
+    margin: 0px;
+}
+
+.timeline-section h3 {
+    text-align: right;
+    min-width: 100px;
+}
+
+@media only screen and (max-width: 500px) {
+    .timeline h1, p {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .timeline {
+        align-items: flex-start;
+    }
 }

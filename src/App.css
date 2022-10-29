@@ -39,3 +39,15 @@
     transform: rotate(360deg);
   }
 }
+
+
+.map-page {
+  display: flex;
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 500px) {
+  .map-page {
+    flex-direction: column;
+  }
+}

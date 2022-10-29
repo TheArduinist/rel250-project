@@ -85,26 +85,22 @@ const MapElement = function(props) {
     }, [ref, map]);
 
     return (
-        <div ref={ref} style={{ height: "100%", width: "67vw"}} />
+        <div ref={ref} className="map-container" />
     );
 };
 
 class Map extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            changeMap: props.changeMap,
-            changeMarkers: props.changeMarkers
-        };
     }
 
     render() {
         const wrapperRender = (status) => {
-            return <h1>{status}</h1>;
+            return <h1 style={{ textAlign: "center", width: "100%" }}>{status}</h1>;
         };
         return (
             <Wrapper apiKey={"AIzaSyBFKFqqC3NanAH8ZxWVbjrGz7fOIi2iFTs"} render={wrapperRender}>
-                <MapElement changeMap={this.state.changeMap} changeMarkers={this.state.changeMarkers} />
+                <MapElement changeMap={this.props.changeMap} changeMarkers={this.props.changeMarkers} />
             </Wrapper>
         );
     }

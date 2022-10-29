@@ -7,6 +7,12 @@
     align-items: center;
 }
 
+@media only screen and (max-width: 500px) {
+    .map-control {
+        width: 100%;
+    }
+}
+
 .map-control button {
     cursor: pointer;
     min-width: 4vw;

@@ -1,3 +1,14 @@
 .scripture {
     font-size: 12px;
 }
+
+.map-container {
+    height: 100%;
+    width: 67vw;
+}
+
+@media only screen and (max-width: 500px) {
+    .map-container {
+        width: 100%;
+    }
+}
