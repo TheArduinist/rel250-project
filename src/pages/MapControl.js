@@ -112,7 +112,7 @@ class MapControl extends React.Component {
     render() {
         return (
             <div className="map-control">
-                <div>
+                <div style={{ maxWidth: "50%" }}>
                     {this.state.desc}
                 </div>
                 <div>

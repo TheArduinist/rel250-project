@@ -8,7 +8,7 @@
     padding-bottom: 15px;
 }
 
-.timeline h1, h2, h3 {
+.timeline h1, .timeline h2, .timeline h3 {
     color: #322612;
     white-space: nowrap;
 }
@@ -29,7 +29,7 @@
     margin-left: 1em;
 }
 
-.timeline-section h2, h3 {
+.timeline-section h2, .timeline-section h3 {
     margin: 0px;
 }
 
@@ -39,7 +39,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .timeline h1, p {
+    .timeline h1, .timeline p {
         text-align: center;
         width: 100%;
     }
