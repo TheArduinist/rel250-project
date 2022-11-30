@@ -2,6 +2,12 @@
     font-size: 12px;
 }
 
+.scripture-desc {
+    padding-left: 0px;
+    overflow-y: auto;
+    max-height: 40vh;
+}
+
 .map-container {
     height: 100%;
     width: 67vw;
@@ -10,5 +16,9 @@
 @media only screen and (max-width: 500px) {
     .map-container {
         width: 100%;
+    }
+    
+    .scripture-desc {
+        max-height: 25vh;
     }
 }

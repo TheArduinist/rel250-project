@@ -26,6 +26,12 @@ class App extends React.Component {
   }
   
   setMarkers(markers) {
+    if (this.state.markers) {
+      for (const marker of this.state.markers) {
+        //marker.setMap(null);
+      }
+    }
+    
     this.setState({ markers: markers });
   }
   
@@ -35,7 +41,7 @@ class App extends React.Component {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="map" element={<div className="map-page"><MapControl map={this.state.map} markers={this.state.markers} /><Map changeMap={this.setMap} changeMarkers={this.setMarkers} /></div>} />
+            <Route path="map" element={<div className="map-page"><MapControl map={this.state.map} markers={this.state.markers} /><Map oldMarkers={this.state.markers} changeMap={this.setMap} changeMarkers={this.setMarkers} /></div>} />
             <Route path="timeline" element={<Timeline />} />
             <Route path="*" element={<NotFound />} />
           </Route>

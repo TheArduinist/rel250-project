@@ -112,12 +112,12 @@ class MapControl extends React.Component {
     render() {
         return (
             <div className="map-control">
-                <div style={{ maxWidth: "50%" }}>
-                    {this.state.desc}
+                <div className="map-control-text">
+                    {this.props.markers ? this.state.desc : <h2>Loading...</h2>}
                 </div>
                 <div>
-                    <button onClick={this.leftClick}>&lt; Previous</button>
-                    <button onClick={this.rightClick}>Next &gt;</button>
+                    {this.props.markers ? <button onClick={this.leftClick}>&lt; Previous</button> : null}
+                    {this.props.markers ? <button onClick={this.rightClick}>Next &gt;</button> : null}
                 </div>
             </div>
         );
