@@ -26,12 +26,6 @@ class App extends React.Component {
   }
   
   setMarkers(markers) {
-    if (this.state.markers) {
-      for (const marker of this.state.markers) {
-        //marker.setMap(null);
-      }
-    }
-    
     this.setState({ markers: markers });
   }
   
